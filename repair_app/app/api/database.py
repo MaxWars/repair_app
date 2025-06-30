@@ -2,7 +2,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-DATABASE_URL = "postgresql://postgres:root@localhost:5433/repair_db"
+DATABASE_URL = "postgresql://postgres:root@localhost:8080/repair_db"
 
 if DATABASE_URL is None:
     raise ValueError("DATABASE_URL not set in .env or environment variables")
